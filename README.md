@@ -1,7 +1,5 @@
 # AnsibleHealth-Assessment
 
-# AnsibleHealth-Assessment
-
 ## What does this repository do ?
 
 This project automates the creation and management of Google Docs using Python. It allows users to:
