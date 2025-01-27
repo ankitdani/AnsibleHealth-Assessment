@@ -1,62 +1,72 @@
 # AnsibleHealth-Assessment
 
-## What does this repository do ?
+## Project Description
 
 This project automates the creation and management of Google Docs using Python. It allows users to:
 
 - Authenticate using a Google service account.
 - Create a new Google Document.
-- Share the document with specified user.
-- Upload and process Markdown file.
+- Share the document with specified users.
+- Upload and process a Markdown file.
 - Format and insert content into the document with styles and checkboxes.
 
-## Prerequisites
+## Setup Instructions
 
-Ensure you have the following installed:
+### Prerequisites
 
-- Python 3.x
-- Required Python packages (see below)
-- A Google Cloud service account JSON key
-- Clone the repository:
+Ensure you have the following:
 
-  ```bash
-  git clone https://github.com/ankitdani/AnsibleHealth-Assessment.git
-  ```
+1. **Python 3.x Installed**
+2. **Google Cloud Service Account**
+   - Create a service account on Google Cloud and download the JSON key file.
+3. **Clone this repository**:
 
-## How to Run
+   ```bash
+   git clone https://github.com/ankitdani/AnsibleHealth-Assessment.git
+   ```
 
-1. **Install Required Dependencies:**
+4. **Required Python Packages**:
+
+   - Install the required packages using the command below:
 
    ```bash
    pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
    ```
 
-2. **Upload Service Account Key:**
+## Steps to Run in Google Colab
 
-   - Run the script and upload your Google service account JSON key when prompted.
+1. **Open Google Colab**
 
-3. **Authenticate and Create Document:**
+   - Navigate to [Google Colab](https://colab.research.google.com/).
 
-   - The script will authenticate and generate a new Google Doc.
-   - A link to the document will be displayed in the output.
+2. **Upload the Notebook**
 
-4. **Share Document:**
+   - Upload the Python notebook (`.ipynb`) file from this repository.
 
-   - The script will automatically share the document with the specified email.
+3. **Install Dependencies**
 
-5. **Upload Markdown File:**
+   - Run the following command in the first cell of the notebook:
 
-   - When prompted, upload a Markdown (.md) file containing meeting notes.
+     ```bash
+     pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
+     ```
 
-6. **Process Content:**
+4. **Upload the Service Account JSON Key**
 
-   - The script will parse and insert content into the document with appropriate formatting.
+   - When prompted, upload the Google Cloud service account JSON key file.
 
-7. **View Document:**
-   - Open the provided document link to see the formatted content.
+5. **Run the Notebook**
+
+   - Execute each cell sequentially to:
+     - Authenticate with Google Docs API.
+     - Create a new Google Document.
+     - Share the document with specified email(s).
+     - Upload and process a Markdown file.
+     - Format and insert content into the document.
+
+6. **View the Generated Document**
+   - After processing, the notebook will display a link to the Google Doc. Open it to view the formatted content.
 
 ## Contact
 
-For any questions or support, please reach out to `dani.s.ankit@gmail.com`.
-
----
+For any questions or support, please reach out to **dani.s.ankit@gmail.com**.
